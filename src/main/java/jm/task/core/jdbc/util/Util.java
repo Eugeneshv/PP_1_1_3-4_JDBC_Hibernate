@@ -11,12 +11,6 @@ public class Util {
 
     static {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException
-                 | NoSuchMethodException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
