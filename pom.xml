@@ -44,7 +44,7 @@
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
-                    <repositoryName>PP_1_1_3-4_JDBC_Hibernate</repositoryName>
+                    <repositoryName>PP_1_1_4_JDBC_Hibernate</repositoryName>
                     <repositoryOwner>Eugeneshv</repositoryOwner>
                 </configuration>
                 <executions>
