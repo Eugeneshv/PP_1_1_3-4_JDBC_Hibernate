@@ -25,7 +25,7 @@ public class Main {
         }
 
         System.out.printf(persons.getAllUsers().toString());
-        persons.dropUsersTable();
         persons.cleanUsersTable();
+        persons.dropUsersTable();
     }
 }
