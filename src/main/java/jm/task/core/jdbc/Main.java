@@ -1,16 +1,20 @@
 package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+//import static jm.task.core.jdbc.util.Util.connection;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        UserServiceImpl persons = new UserServiceImpl();
+        UserService persons = new UserServiceImpl();
         persons.createUsersTable();
 
         List<User> user = new ArrayList<>();
@@ -26,7 +30,9 @@ public class Main {
 
         System.out.printf(persons.getAllUsers().toString());
 
-        persons.dropUsersTable();
         persons.cleanUsersTable();
+        persons.dropUsersTable();
+
+
     }
 }
